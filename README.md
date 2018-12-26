@@ -1,4 +1,4 @@
-# express-test
+# NodeJs-Express-MongoDB-AngularJs
 ## L'objectif 
 créer un mini carnet d'adresse pour extraterrestre sous NodeJS à savoir :
 * (Inscription/Connexion/Déconnexion) du extraterrestre par login/mot de passe 
