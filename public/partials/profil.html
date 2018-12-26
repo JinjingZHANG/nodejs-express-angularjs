@@ -1,0 +1,21 @@
+<h1>{{user.name}}</h1>
+<hr>
+<form>
+    <h3>Profil</h3>
+    <ul>
+        <li>Age: {{user.age}}</li>
+        <li>Famille: {{user.famille}}</li>
+        <li>Race: {{user.race}}</li>
+        <li>Nourriture: {{user.nourriture}}</li>
+    </ul>
+    <a href="/#/edit/{{user.name}}">EditProfil</a>
+</form>
+<form>
+    <h3>Friends:</h3>
+    <ul>
+        <li ng-repeat='friend in user.friends'>
+            {{friend}}
+        </li>
+    </ul>
+    <a href='/#/editfriends'>EditFriends</a>
+</form>

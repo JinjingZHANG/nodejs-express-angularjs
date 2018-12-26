@@ -1,0 +1,22 @@
+<h1>{{user.name}}'s Friends</h1>
+
+<div>
+    <h3>Not Friends</h3>
+    <select multiple class="form-control" ng-model="selectedUser">
+        <option ng-repeat='friend in nFriends'>{{friend}}</option>
+    </select>
+    <br>
+    <div class="col-md-6 col-md-offset-3">
+        <input type="button" value="👇Add👇" ng-click="add()"/>
+        <input type="button" value="👆Delete👆" ng-click="delete()"/>
+    </div>
+    <br>
+    <h3>Friends</h3>
+    <select multiple class="form-control" ng-model="selectedFriend">
+        <option ng-repeat='friend in user.friends'>{{friend}}</option>
+    </select>
+</div>
+<br>
+<div>
+    <input type="button" value="Submit" ng-click="save()" />
+</div>
